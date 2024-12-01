@@ -1,0 +1,16 @@
+{
+    "name": "shakhawat/share",
+    "description": "This is url and file share project",
+    "autoload": {
+        "psr-4": {
+            "Shakhawat\\Share\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shakhawat",
+            "email": "shakhawat9083@gmail.com"
+        }
+    ],
+    "require": {}
+}

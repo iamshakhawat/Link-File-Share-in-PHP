@@ -1,0 +1,12 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect the root URL to src/index.php
+RewriteRule ^$ src/index.php [L]
+
+# Serve all other files as-is if they exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect to the appropriate file in the src directory
+RewriteRule ^(.*)$ src/$1 [L]

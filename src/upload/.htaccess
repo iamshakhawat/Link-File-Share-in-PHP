@@ -1,0 +1,9 @@
+# Disable execution of PHP files
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
+
+# Optionally, deny all files from being accessed directly
+<Files "*">
+    Deny from all
+</Files>
